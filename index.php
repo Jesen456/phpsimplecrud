@@ -1,75 +1,60 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<?php include 'template/header.php'; // Menyertakan header template ?>
-	</head>
+<?php include 'template/header.php'; ?>
 
-	<body class="layout-fixed fixed-header fixed-footer sidebar-expand-lg sidebar-open bg-body-tertiary">
+    <!-- Bootstrap 5 + Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
-		<div class="app-wrapper">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
-			<?php include 'template/navbar.php'; // Menyertakan navbar template ?>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style-gym-hero.css">
+</head>
+<body class="bg-black text-white">
 
-			<?php include 'template/sidebar.php'; // Menyertakan sidebar template ?>
+    <!-- HERO SECTION -->
+    <section class="hero d-flex align-items-center justify-content-center min-vh-100 position-relative overflow-hidden">
+        <!-- Background Image -->
+        <div class="hero-bg"></div>
 
-			<main class="app-main">
+        <div class="container position-relative z-3">
+            <div class="row align-items-center">
+                <!-- LEFT: Text + Button -->
+                <div class="col-lg-5">
+                    <!-- Logo -->
+                    <div class="d-flex align-items-center mb-5">
+                        <i class="bi bi-trophy text-red fs-1 me-2"></i>
+                        <h1 class="h4 fw-bold mb-0 text-white">FITZONE GYM</h1>
+                    </div>
 
-				<div class="app-content-header">
-					<div class="container-fluid">
-						<div class="row">
-							<div class="col-sm-6">
-								<h3 class="mb-0">Aplikasi SICMAS</h3>
-							</div>
-							<div class="col-sm-6">
-								<ol class="breadcrumb float-sm-end">
-									<li class="breadcrumb-item"><a href="index.php">Beranda</a></li>
-									<li class="breadcrumb-item active" aria-current="page">Beranda</li>
-								</ol>
-							</div>
-						</div>
-					</div>
-				</div>
+                    <!-- Main Title -->
+                    <h1 class="display-1 fw-bold text-orange mb-2" style="letter-spacing: -2px;">
+                        GYM WEB DESIGN
+                    </h1>
 
-				<div class="app-content">
-					<div class="container-fluid">
-						<div class="row">
-							<div class="col-12">
-								<div class="card">
+                    <!-- Subtitle -->
+                    <h2 class="h4 fw-normal text-white mb-4">
+                        WELCOME TO MY WEBSITE GYM MEMBERSHIP
+                    </h2>
 
-									<div class="card-header">
-										<h3 class="card-title">Selamat Datang!</h3>
-										<div class="card-tools">
-											<button type="button" class="btn btn-tool" data-lte-toggle="card-collapse" title="Collapse">
-												<i data-lte-icon="expand" class="bi bi-plus-lg"></i>
-												<i data-lte-icon="collapse" class="bi bi-dash-lg"></i>
-											</button>
-											<button type="button" class="btn btn-tool" data-lte-toggle="card-remove" title="Remove">
-												<i class="bi bi-x-lg"></i>
-											</button>
-										</div>
-									</div>
+                    <!-- JOIN NOW Button -->
+                    <a href="data-input.php" class="btn btn-orange btn-lg px-5 py-3 rounded-pill fw-bold shadow-lg text-uppercase d-inline-flex align-items-center">
+                        <span>JOIN NOW</span>
+                    </a>
+                </div>
 
-									<div class="card-body">
-										<p>Halo user! SICMAS merupakan singkatan dari Sistem Informasi CRUD Mahasiswa, aplikasi ini bertujuan untuk mengajarkan bagaimana merancang sebuah dashboard pengelolaan dengan konsep CRUD menggunakan bahasa pemrograman PHP. Penulisan kode menggunakan OOP (Object Oriented Programming). Silakan gunakan secara bijak dan modifikasi sesuai keperluan!</p>
-										<p>Silakan pilih salah satu tombol untuk memulai!</p>
-										<a href="data-input.php" class="btn btn-primary btn-lg"><i class="bi bi-clipboard-data-fill"></i> Input Data Mahasiswa</a>
-										<a href="data-list.php" class="btn btn-success btn-lg"><i class="bi bi-card-list"></i> Lihat Daftar Mahasiswa</a>
-										<a href="data-search.php" class="btn btn-warning btn-lg"><i class="bi bi-search-heart-fill"></i> Cari Mahasiswa</a>
-									</div>
+                <!-- RIGHT: Athlete Image -->
+                <div class="col-lg-7 text-center">
+                    <img src="assets/img/bg-img/valery-sysoev-LDAirERNzew-unsplash.jpg" alt="FITZONE Athlete" class="img-fluid hero-image">
+                </div>
+            </div>
+        </div>
+    </section>
 
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+    <!-- FOOTER -->
+    <?php include 'template/footer.php'; ?>
 
-			</main>
-
-			<?php include 'template/footer.php'; // Menyertakan footer template ?>
-
-		</div>
-		
-		<?php include 'template/script.php'; // Menyertakan script template ?>
-
-	</body>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

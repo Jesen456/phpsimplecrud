@@ -1,1 +1,349 @@
-/* Taruh CSS Custom Disini */
+/* ========================================
+   FITZONE GYM - TEMA MERAH HITAM + GAMBAR GYM
+   Kompatibel AdminLTE 3 | Tidak Ubah Struktur HTML
+   ======================================== */
+
+/* === BACKGROUND UTAMA: GAMBAR FITZONE GYM === */
+body {
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.88)),
+        url('../img/fitzone-gym-bg.jpg') center/cover no-repeat fixed !important;
+    background-attachment: fixed;
+    color: #e2e2e2 !important;
+    font-family: 'Source Sans 3', sans-serif !important;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* === CONTENT WRAPPER === */
+.content-wrapper {
+    background: rgba(26, 26, 26, 0.25) !important;
+    backdrop-filter: blur(2px);
+    border-radius: 12px;
+    margin: 15px;
+    padding: 20px;
+    min-height: calc(100vh - 120px);
+}
+
+/* === NAVBAR / HEADER === */
+.main-header,
+.navbar {
+    background: rgba(183, 28, 28, 0.92) !important;
+    backdrop-filter: blur(12px);
+    border-bottom: 3px solid #FF1744 !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5) !important;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    transition: all 0.3s ease;
+}
+
+.navbar .navbar-brand:hover,
+.navbar .nav-link:hover {
+    color: #FF1744 !important;
+    text-shadow: 0 0 10px rgba(255, 23, 68, 0.8);
+}
+
+/* === SIDEBAR === */
+.sidebar,
+.nav-sidebar {
+    background: rgba(0, 0, 0, 0.96) !important;
+    backdrop-filter: blur(10px);
+    border-right: 3px solid #FF0000 !important;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+}
+
+.nav-sidebar .nav-link {
+    color: #ff6b6b !important;
+    font-weight: 600;
+    padding: 12px 20px !important;
+    border-left: 4px solid transparent;
+    transition: all 0.3s ease;
+    border-radius: 0;
+}
+
+.nav-sidebar .nav-link:hover,
+.nav-sidebar .nav-link.active {
+    background: #D32F2F !important;
+    color: #ffffff !important;
+    border-left-color: #FF1744 !important;
+    transform: translateX(6px);
+    box-shadow: 0 0 15px rgba(255, 23, 68, 0.5);
+}
+
+.nav-sidebar .nav-link i {
+    color: #FF5252 !important;
+}
+
+/* === CARD === */
+.card {
+    background: rgba(26, 26, 26, 0.97) !important;
+    border: 1px solid #FF1744 !important;
+    border-radius: 14px !important;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.7) !important;
+    backdrop-filter: blur(6px);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 40px rgba(255, 0, 0, 0.4) !important;
+}
+
+.card-header {
+    background: linear-gradient(90deg, #B71C1C, #D32F2F) !important;
+    border-bottom: 2px solid #FF1744 !important;
+    color: #ffffff !important;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px 20px;
+}
+
+.card-title {
+    color: #FF1744 !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1.4rem;
+    text-shadow: 0 0 8px rgba(255, 23, 68, 0.6);
+}
+
+.card-body p {
+    color: #dddddd !important;
+    line-height: 1.7;
+}
+
+/* === FORM INPUT: BISA DIBACA DI MODE GELAP === */
+.form-control,
+.form-select,
+.form-label,
+.input-group-text,
+.form-text {
+    color: #ffffff !important;
+    background-color: #2d2d2d !important;
+    border-color: #555555 !important;
+}
+
+.form-control::placeholder,
+.form-select::placeholder {
+    color: #bbbbbb !important;
+    opacity: 1;
+}
+
+.form-control:focus,
+.form-select:focus {
+    color: #ffffff !important;
+    background-color: #333333 !important;
+    border-color: #FF1744 !important;
+    box-shadow: 0 0 0 0.2rem rgba(255, 23, 68, 0.4) !important;
+}
+
+textarea.form-control {
+    min-height: 100px;
+}
+
+/* === FORM INPUT: KOLOM PUTIH, TULISAN HITAM === */
+.form-control,
+.form-select {
+    background-color: #ffffff !important;
+    color: #212529 !important;
+    border-color: #ced4da !important;
+}
+
+.form-control::placeholder,
+.form-select::placeholder {
+    color: #6c757d !important;
+    opacity: 1;
+}
+
+.form-control:focus,
+.form-select:focus {
+    background-color: #ffffff !important;
+    color: #212529 !important;
+    border-color: #FF1744 !important;
+    box-shadow: 0 0 0 0.2rem rgba(255, 23, 68, 0.25) !important;
+}
+
+/* === TABEL: BACKGROUND PUTIH, TULISAN HITAM === */
+.table {
+    background-color: #ffffff !important;
+    color: #212529 !important;
+    border-radius: 12px !important;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+}
+
+.table th,
+.table td {
+    color: #212529 !important;
+    font-weight: 600;
+    vertical-align: middle;
+    border-color: #dee2e6 !important;
+}
+
+.table thead th {
+    background: linear-gradient(90deg, #f8f9fa, #e9ecef) !important;
+    color: #495057 !important;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    font-size: 0.9rem;
+    border-bottom: 3px solid #FF1744 !important;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f3f5 !important;
+    transition: all 0.2s ease;
+}
+
+.table .badge {
+    font-weight: 700;
+    padding: 6px 12px;
+    border-radius: 50px;
+}
+
+/* === BUTTONS - GYM POWER === */
+.btn {
+    border-radius: 12px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1.2px !important;
+    padding: 14px 28px !important;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5) !important;
+    border: none !important;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #D32F2F, #FF1744) !important;
+    color: white !important;
+    border: 2px solid #FF1744 !important;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, #B71C1C, #D32F2F) !important;
+    transform: scale(1.06);
+    box-shadow: 0 0 30px rgba(255, 23, 68, 0.8) !important;
+}
+
+.btn-success {
+    background: #000000 !important;
+    color: #FF1744 !important;
+    border: 2px solid #FF0000 !important;
+}
+
+.btn-success:hover {
+    background: #FF0000 !important;
+    color: white !important;
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.9) !important;
+}
+
+.btn-warning {
+    background: #B71C1C !important;
+    color: white !important;
+    border: 2px solid #FF1744 !important;
+}
+
+.btn-warning:hover {
+    background: #FF1744 !important;
+    box-shadow: 0 0 35px rgba(255, 23, 68, 1) !important;
+    transform: scale(1.06);
+}
+
+/* === ICONS === */
+.bi {
+    filter: drop-shadow(0 0 4px rgba(255, 0, 0, 0.6));
+}
+
+.btn .bi {
+    color: inherit !important;
+}
+
+/* === BREADCRUMB === */
+.breadcrumb-item a {
+    color: #ff6b6b !important;
+    font-weight: 600;
+}
+
+.breadcrumb-item.active {
+    color: #FF1744 !important;
+    font-weight: 700;
+}
+
+/* === CARD TOOLS === */
+.btn-tool {
+    color: #ff8a8a !important;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
+
+.btn-tool:hover {
+    color: #FF1744 !important;
+    background: rgba(255, 23, 68, 0.3) !important;
+}
+
+/* === FOOTER === */
+.main-footer {
+    background: rgba(0, 0, 0, 0.96) !important;
+    backdrop-filter: blur(10px);
+    color: #ff6b6b !important;
+    border-top: 3px solid #FF0000 !important;
+    text-align: center;
+    font-size: 0.95rem;
+    padding: 18px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+/* === PULSE EFFECT === */
+@keyframes pulse-gym {
+    0% { box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7); }
+    70% { box-shadow: 0 0 0 22px rgba(255, 0, 0, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 0, 0, 0); }
+}
+
+.btn-primary,
+.btn-warning {
+    animation: pulse-gym 2s infinite;
+}
+
+/* === TEXT SELECTION === */
+::selection {
+    background: #FF1744;
+    color: white;
+}
+
+/* === SCROLLBAR === */
+.os-scrollbar-handle {
+    background: #D32F2F !important;
+    border-radius: 10px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+    .content-wrapper {
+        margin: 10px;
+        padding: 15px;
+    }
+    .sidebar {
+        border-right: none !important;
+        border-bottom: 3px solid #FF0000 !important;
+    }
+    .card {
+        margin: 10px 0;
+    }
+    .btn {
+        padding: 12px 20px !important;
+        font-size: 0.9rem;
+    }
+}

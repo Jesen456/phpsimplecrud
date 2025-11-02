@@ -1,0 +1,130 @@
+/* FITZONE GYM - FINAL WITH FOOTER */
+/* Orange + Black | Full Hero + Clean Footer */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Inter:wght@400;500&display=swap');
+
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000 !important;
+    color: #fff !important;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+/* HERO BACKGROUND */
+.hero-bg {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: 
+        linear-gradient(rgba(0,0,0,0.92), rgba(0,0,0,0.98)),
+        url('../img/gym-bg.jpg') center/cover no-repeat;
+    background-attachment: fixed;
+    z-index: 1;
+}
+
+/* HERO IMAGE */
+.hero-image {
+    max-height: 75vh;
+    object-fit: contain;
+    filter: brightness(1.05) contrast(1.1);
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+/* TEXT STYLES */
+.display-1 {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 900 !important;
+    line-height: 0.9;
+}
+
+.h4 {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 700;
+}
+
+/* ORANGE COLOR */
+.text-red {
+    color: #ff0000 !important;
+}
+
+/* JOIN NOW BUTTON */
+.btn-orange {
+    background: #950505 !important;
+    border: none !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 800 !important;
+    letter-spacing: 2px !important;
+    font-size: 1.1rem !important;
+    padding: 1rem 3rem !important;
+    border-radius: 50px !important;
+    box-shadow: 0 10px 30px rgba(255, 107, 53, 0.4) !important;
+    transition: all 0.4s ease !important;
+    color: rgb(255, 249, 249) !important;
+}
+
+.btn-orange:hover {
+    background: #E55A2B !important;
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(255, 107, 53, 0.6) !important;
+}
+
+/* ICON */
+.bi-trophy {
+    filter: drop-shadow(0 0 15px #FF6B35);
+}
+
+/* FOOTER */
+.footer {
+    background: #111 !important;
+    border-top: 1px solid #333 !important;
+}
+
+.footer a {
+    transition: all 0.3s ease;
+}
+
+.footer a:hover {
+    color: #fff !important;
+    transform: translateY(-3px);
+}
+
+.footer .text-muted {
+    color: #666 !important;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .display-1 {
+        font-size: 3.5rem !important;
+    }
+    .hero-image {
+        max-height: 55vh;
+        margin-top: 2rem;
+    }
+    .btn-orange {
+        padding: 0.9rem 2.5rem !important;
+        font-size: 1rem !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .display-1 {
+        font-size: 2.8rem !important;
+    }
+    .h4 {
+        font-size: 1.1rem !important;
+    }
+    .footer .row {
+        text-align: center !important;
+    }
+    .footer .col-md-6 {
+        margin-bottom: 1rem;
+    }
+}
