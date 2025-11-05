@@ -90,13 +90,12 @@ $dataMember = $member->getAllMember();
 													} else {
 														foreach ($dataMember as $index => $member){
 															// DIPERBAIKI: Normalisasi string
-															$statusKey = strtolower(trim($member['status']));
-
+															$statusKey = strtolower(trim($member['status'] ?? ''));
 															$statusBadge = match($statusKey) {
 																'aktif'         => '<span class="badge bg-success">Aktif</span>',
-																'tidak aktif'   => '<span class="badge bg-danger">Tidak Aktif</span>',
+																'nonaktif'      => '<span class="badge bg-danger">Tidak Aktif</span>',  // BARU
 																'cuti'          => '<span class="badge bg-warning text-dark">Cuti</span>',
-																'expired'       => '<span class="badge bg-primary">Expired</span>',
+																'selesai'       => '<span class="badge bg-secondary">Expired</span>',
 																default         => '<span class="badge bg-secondary">Unknown</span>'
 															};
 

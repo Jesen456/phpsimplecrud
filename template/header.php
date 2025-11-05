@@ -36,4 +36,8 @@
 
     <!-- Google Font: Montserrat (untuk judul & tombol kuat) -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    
+     <!-- FAVICON (TAMBAHAN INI SAJA!) -->
+    <link rel="icon" href="assets/img/fitzone.png" type="image/x-icon">
+
 </head>

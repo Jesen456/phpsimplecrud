@@ -128,3 +128,173 @@ body {
         margin-bottom: 1rem;
     }
 }
+/* <!-- Custom CSS untuk Why Choose Section --> */
+.why-choose-section {
+    background-color: #000;
+    color: #fff;
+    padding: 60px;
+    font-family: 'Inter', sans-serif;
+}
+
+.why-title {
+    font-size: 4rem; /* Lebih besar seperti contoh */
+    font-weight: 900;
+    line-height: 1.1;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -1px;
+}
+
+.highlight-red {
+    color: #ff0000; /* Merah terang */
+    font-weight: 900;
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 3rem; /* Jarak antar item lebih lega */
+}
+
+.feature-icon {
+    font-size: 2.8rem; /* Ikon lebih besar seperti contoh */
+    margin-right: 1.8rem;
+    color: #ff0000; /* Merah */
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-text h5 {
+    font-size: 1.4rem; /* Sedikit lebih besar */
+    font-weight: 800;
+    margin-bottom: 0.6rem;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -0.5px;
+}
+
+.feature-text p {
+    font-size: 1.05rem; /* Lebih jelas dibaca */
+    color: #ddd;
+    margin: 0;
+    line-height: 1.7;
+}
+
+/* Responsif */
+@media (max-width: 992px) {
+    .why-title {
+        font-size: 3.2rem;
+    }
+    .feature-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    .feature-icon {
+        margin-bottom: 1.2rem;
+        margin-right: 0;
+        font-size: 2.5rem;
+    }
+    .feature-text h5 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .why-title {
+        font-size: 2.5rem;
+    }
+    .feature-icon {
+        font-size: 2.3rem;
+    }
+    .feature-text h5 {
+        font-size: 1.2rem;
+    }
+}
+
+/* === PRICING PLAN SECTION === */
+        .pricing-section {
+            background-color: #000 !important;
+            color: #fff !important;
+            padding: 30px 0 !important;
+            font-family: 'Inter', sans-serif !important;
+        }
+        .pricing-title {
+            font-size: 3.5rem !important;
+            font-weight: 900 !important;
+            font-family: 'Montserrat', sans-serif !important;
+            text-align: center !important;
+            margin-bottom: 1rem !important;
+        }
+        .pricing-subtitle {
+            font-size: 1.1rem !important;
+            color: #ccc !important;
+            text-align: center !important;
+            margin-bottom: 4rem !important;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .pricing-card {
+            background-color: #fff !important;
+            color: #000 !important;
+            border-radius: 12px !important;
+            padding: 2rem !important;
+            height: 100% !important;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3) !important;
+            transition: transform 0.3s ease !important;
+        }
+        .pricing-card:hover {
+            transform: translateY(-10px) !important;
+        }
+        .pricing-card.premium {
+            background: linear-gradient(135deg, #ffffff, #b93113) !important;
+            color: #000 !important;
+        }
+        .card-title {
+            font-size: 1.4rem !important;
+            font-weight: 800 !important;
+            margin-bottom: 1rem !important;
+            font-family: 'Montserrat', sans-serif !important;
+        }
+        .card-price {
+            font-size: 2.8rem !important;
+            font-weight: 900 !important;
+            margin-bottom: 0.5rem !important;
+            font-family: 'Montserrat', sans-serif !important;
+        }
+        .card-price small {
+            font-size: 1rem !important;
+            font-weight: 500 !important;
+            color: #555 !important;
+        }
+        .pricing-card ul {
+            list-style: none !important;
+            padding: 0 !important;
+            margin: 1.5rem 0 !important;
+        }
+        .pricing-card ul li {
+            font-size: 1rem !important;
+            margin-bottom: 0.8rem !important;
+            position: relative !important;
+            padding-left: 1.8rem !important;
+        }
+        .pricing-card ul li:before {
+            content: '•';
+            color: #9c7e12 !important;
+            font-weight: bold !important;
+            position: absolute !important;
+            left: 0 !important;
+        }
+        .pricing-card.premium ul li:before {
+            color: #000 !important;
+        }
+
+        @media (max-width: 992px) {
+            .pricing-title { font-size: 2.8rem !important; }
+            .pricing-card { margin-bottom: 2rem !important; }
+        }
+        @media (max-width: 576px) {
+            .pricing-title { font-size: 2.3rem !important; }
+            .card-price { font-size: 2.3rem !important; }
+        }
