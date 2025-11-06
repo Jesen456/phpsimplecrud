@@ -121,8 +121,10 @@ public function inputMembership($data){
         if(!$stmt){
             return false;
         }
+
         $stmt->bind_param("s", $id);
         $result = $stmt->execute();
+        $result = ($stmt->affected_rows > 0);
         $stmt->close();
         return $result;
     }

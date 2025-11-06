@@ -63,7 +63,7 @@ if(isset($_GET['search'])){
 									<div class="card-body">
 										<form action="data-search.php" method="GET">
 											<div class="mb-3">
-												<label for="search" class="form-label">Masukkan ID atau Nama Member</label>
+												<label for="search" class="form-label">Masukkan kode atau Nama Member</label>
 												<input type="text" class="form-control" id="search" name="search" placeholder="Cari berdasarkan Kode atau Nama Member" value="<?php echo $kataKunci; ?>" required>
 											</div>
 											<button type="submit" class="btn btn-primary"><i class="bi bi-search-heart-fill"></i> Cari</button>

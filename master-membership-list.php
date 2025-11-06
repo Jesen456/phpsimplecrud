@@ -82,7 +82,7 @@ $datamembership = $master->getMembership();
 												<?php
 													if(count($datamembership) == 0){
 													    echo '<tr class="align-middle">
-															<td colspan="4" class="text-center">Tidak ada data membership.</td>
+															<td colspan="6" class="text-center">Tidak ada data membership.</td>
 														</tr>';
 													} else {
 														foreach ($datamembership as $index => $membership){
@@ -94,7 +94,7 @@ $datamembership = $master->getMembership();
 																<td>'.$membership['durasi'].'</td>
 																<td class="text-center">
 																	<button type="button" class="btn btn-sm btn-warning me-1" onclick="window.location.href=\'master-membership-edit.php?id='.$membership['kode'].'\'"><i class="bi bi-pencil-fill"></i> Edit</button>
-																	<button type="button" class="btn btn-sm btn-danger" onclick="if(confirm(\'Yakin ingin menghapus data program studi ini?\')){window.location.href=\'proses/proses-membership.php?aksi=deletemembership&id='.$membership['kode'].'\'}"><i class="bi bi-trash-fill"></i> Hapus</button>
+																	<button type="button" class="btn btn-sm btn-danger" onclick="if(confirm(\'Yakin ingin menghapus data membership ini?\')){window.location.href=\'proses/proses-membership.php?aksi=deletemembership&kode='.$membership['kode'].'\'}"><i class="bi bi-trash-fill"></i> Hapus</button>
 																</td>
 															</tr>';
 														}

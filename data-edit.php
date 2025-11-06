@@ -67,10 +67,6 @@ if(isset($_GET['status'])){
                                     <form action="proses/proses-edit.php" method="POST">
 									    <div class="card-body">
                                             <input type="hidden" name="id" value="<?php echo $datamember['id']; ?>">
-                                            <div class="mb-3">
-                                                <label for="ID" class="form-label">ID Member</label>
-                                                <input type="number" class="form-control" id="id" name="id" placeholder="Masukkan ID Member" value="<?php echo $datamember['id']; ?>" required>
-                                            </div>
 
                                             <!-- TAMBAHAN: KODE MEMBER -->
                                             <div class="mb-3">

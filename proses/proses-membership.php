@@ -34,13 +34,20 @@ if($_GET['aksi'] == 'inputmembership'){
         header("Location: ../master-membership-edit.php?id=".$datamembership['kode']."&status=failed");
     }
 } elseif($_GET['aksi'] == 'deletemembership'){
-    $id = $_GET['kode'];
+    $id = $_GET['kode'] ?? '';
+
+    // Validasi: kode tidak boleh kosong (karena string, bukan angka)
+    if (empty($id)) {
+        header("Location: ../master-membership-list.php?status=deletefailed");
+        exit;
+    }
+
     $delete = $master->deleteMembership($id);
-    if($delete){
+    if($delete === true){
         header("Location: ../master-membership-list.php?status=deletesuccess");
     } else {
-        // DIPERBAIKI: nama file benar
         header("Location: ../master-membership-list.php?status=deletefailed");
     }
+    exit;
 }
 ?>
