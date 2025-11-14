@@ -1,6 +1,6 @@
-# SICMAS - Sistem Informasi CRUD Mahasiswa
+# SICMAS - Sistem Informasi CRUD Membership gym
 
-![](<img width="1892" height="909" alt="Screenshot 2025-11-14 144643" src="https://github.com/user-attachments/assets/e9c0a54f-5e3b-4cd8-9f68-2d50909dfce1" />
+![](<img width="1892" height="909" alt="Screenshot 2025-11-14 144643" src="https://github.com/user-attachments/assets/60f7b478-5bf1-4c9e-801f-2c065fb88e28" />
 )
 SISTEM MANAJEMEN FITZONE GYM
 Aplikasi FitZone Gym adalah sistem manajemen gym berbasis web yang dibangun menggunakan bahasa pemrograman PHP dan konsep Object-Oriented Programming (OOP). Dengan struktur kode yang sederhana dan bersih, aplikasi ini dirancang agar mudah dipahami, dikembangkan, dan diterapkan di dunia nyata — cocok untuk pembelajaran maupun operasional gym profesional.
