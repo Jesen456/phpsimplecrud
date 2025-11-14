@@ -1,17 +1,18 @@
 # SICMAS - Sistem Informasi CRUD Mahasiswa
 
-![](assets/img/screenshot.png)
+![](<img width="1892" height="909" alt="Screenshot 2025-11-14 144643" src="https://github.com/user-attachments/assets/e9c0a54f-5e3b-4cd8-9f68-2d50909dfce1" />
+)
+SISTEM MANAJEMEN FITZONE GYM
+Aplikasi FitZone Gym adalah sistem manajemen gym berbasis web yang dibangun menggunakan bahasa pemrograman PHP dan konsep Object-Oriented Programming (OOP). Dengan struktur kode yang sederhana dan bersih, aplikasi ini dirancang agar mudah dipahami, dikembangkan, dan diterapkan di dunia nyata — cocok untuk pembelajaran maupun operasional gym profesional.
 
-Aplikasi SICMAS merupakan sistem yang dirancang untuk keperluan kuliah Pemrograman Internet menggunakan bahasa pemrograman PHP. Dengan sintaks yang sederhana harapannya mahasiswa mampu memahami bagaimana implementasi CRUD dengan Object Oriented Programming (OOP).
+FITUR UTAMA SISTEM
 
-**FITUR SISTEM**
-
-1. Input Data Mahasiswa
-2. Edit Data Mahasiwwa
-3. Delete Data Mahasiswa
-4. Input/Edit/Delete Master Data Program Studi
-5. Input/Edit/Delete Master Data Provinsi
-6. Feedback Error
+Input Data Member Baru
+Edit Data Member
+Hapus Data Member
+Input/Edit/Hapus Master Data Membership
+Input/Edit/Hapus Master Data Kota
+Feedback Error & Validasi Form
 
 **CARA INSTALASI**
 
