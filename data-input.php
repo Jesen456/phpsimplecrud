@@ -25,9 +25,7 @@ if(isset($_GET['status'])){
 	<body class="layout-fixed fixed-header fixed-footer sidebar-expand-lg sidebar-open bg-body-tertiary">
 
 		<div class="app-wrapper">
-
-          <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/custom.css">
+            
 
 			<?php include 'template/navbar.php'; ?>
 

@@ -43,34 +43,32 @@ class MasterData extends Database {
     public function getStatus(){
         return [
             ['id' => 1, 'nama' => 'Aktif'],
-            ['id' => 2, 'nama' => 'Tidak Aktif'],
-            ['id' => 3, 'nama' => 'Cuti'],
-            ['id' => 4, 'nama' => 'Expired']
+            ['id' => 2, 'nama' => 'Tidak Aktif']
         ];
     }
 
     // Method untuk input data membership
-public function inputMembership($data){
-    // DIPERBAIKI: Cek apakah key ada & tidak kosong
-    $kodeMembership = $data['kode'] ?? '';
-    $namaMembership = $data['nama'] ?? '';
-    $harga = isset($data['harga']) && $data['harga'] !== '' ? (int)$data['harga'] : 0;
-    $durasi = isset($data['durasi']) && $data['durasi'] !== '' ? (int)$data['durasi'] : 0;
+    public function inputMembership($data){
+        // DIPERBAIKI: Cek apakah key ada & tidak kosong
+        $kodeMembership = $data['kode'] ?? '';
+        $namaMembership = $data['nama'] ?? '';
+        $harga = isset($data['harga']) && $data['harga'] !== '' ? (int)$data['harga'] : 0;
+        $durasi = isset($data['durasi']) && $data['durasi'] !== '' ? (int)$data['durasi'] : 0;
 
-    // Validasi minimal
-    if (empty($kodeMembership) || empty($namaMembership) || $harga <= 0 || $durasi <= 0) {
-        return false;
-    }
+        // Validasi minimal
+        if (empty($kodeMembership) || empty($namaMembership) || $harga <= 0 || $durasi <= 0) {
+            return false;
+        }
 
-    $query = "INSERT INTO tb_membership (kode_membership, nama_membership, harga, durasi_hari) VALUES (?, ?, ?, ?)";
-    $stmt = $this->conn->prepare($query);
-    if(!$stmt){
-        return false;
-    }
-    $stmt->bind_param("ssii", $kodeMembership, $namaMembership, $harga, $durasi);
-    $result = $stmt->execute();
-    $stmt->close();
-    return $result;
+        $query = "INSERT INTO tb_membership (kode_membership, nama_membership, harga, durasi_hari) VALUES (?, ?, ?, ?)";
+        $stmt = $this->conn->prepare($query);
+        if(!$stmt){
+            return false;
+        }
+        $stmt->bind_param("ssii", $kodeMembership, $namaMembership, $harga, $durasi);
+        $result = $stmt->execute();
+        $stmt->close();
+        return $result;
     }
 
     // Method untuk mendapatkan data membership berdasarkan kode
@@ -194,5 +192,4 @@ public function inputMembership($data){
     }
 
 }
-
 ?>

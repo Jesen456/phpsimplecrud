@@ -5,7 +5,7 @@ include_once 'db-config.php';
 class Member extends Database {
 
     // Method untuk input data member
-    public function inputMember($data){
+    public function inputMember($data): bool{
         // Mengambil data dari parameter $data
         $kode      = $data['kode'];
         $nama     = $data['nama'];

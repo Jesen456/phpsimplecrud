@@ -94,8 +94,6 @@ $dataMember = $member->getAllMember();
 															$statusBadge = match($statusKey) {
 																'aktif'         => '<span class="badge bg-success">Aktif</span>',
 																'nonaktif'      => '<span class="badge bg-danger">Tidak Aktif</span>',  // BARU
-																'cuti'          => '<span class="badge bg-warning text-dark">Cuti</span>',
-																'selesai'       => '<span class="badge bg-secondary">Expired</span>',
 																default         => '<span class="badge bg-secondary">Unknown</span>'
 															};
 
